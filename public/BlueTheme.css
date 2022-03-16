@@ -1,0 +1,145 @@
+body{
+    background-color: #1e90ff;
+}
+
+div{
+    color: white;
+}
+
+#main{
+    width: 50vw;
+    border: 4px solid white;
+    border-radius: 15px;    
+    height: 50vh;
+    margin: 0 auto;
+}
+
+#regName{
+  margin-left: 0.25vw;
+}
+
+#regPassword{
+  margin-left: 0.35vw;
+}
+
+#regEmail{
+  margin-left: 1.6vw;
+}
+
+#Login{
+  margin-top: 7vh;
+}
+
+#Login, #Register{
+    width: 25vw;
+    height: 20vh;
+    margin-left: 30px;
+}
+input{
+    margin-top: 10px;
+}
+button{
+    margin-top: 10px;
+}
+
+#errormsg{
+  margin-top: 20vh;
+  margin-left: 25vw;
+  color: white;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(34, 121, 207);
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+  }
+
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffff;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+#secureMain{
+    transition: margin-left 0.5s;
+    padding: 20px;
+}
+
+#MenuButton{
+    background-color: #1e80ff;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 15px;
+    text-align: center;
+    display: inline-block;
+}
+
+#changeStyle, #allNotes{
+  background-color: rgb(34, 121, 207);
+  text-align: center;
+  display: none;
+  height: 0;
+  width: 13%;
+  position: fixed;
+  z-index: 1;
+}
+
+#notesDiv{
+  display: none
+}
+
+.styleButton{
+  background-color: rgb(34, 121, 207);
+  border: none;
+  outline: none;
+  color: white;
+  padding: 12px 12px;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+}
+
+.styleButton:hover{
+  background-color: #1e90ff;
+}
+
+#accountMenu, #createNode{
+  z-index: 0;
+  transition: margin-top 0.15s;
+}
+
+#accountDiv{
+  display: none;
+}
+
+#createNoteDiv{
+  display: none;
+}
+
+#cnoteContent{
+  width: 75vw;
+  height: 65vh;
+}

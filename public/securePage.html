@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link id="Theme" rel="stylesheet" href="BlueTheme.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="javascript:Home()">Home</a>
+        <a href="javascript:void(0)" onclick="openStyle()">Style</a>
+        <div id="changeStyle">
+            <button class="styleButton" id="BlueTheme" onclick="BlueTheme()">Blue Theme</button>
+            <br>
+            <button class="styleButton" id="LightTheme" onclick="LightTheme()">White Theme</button>
+            <br>
+            <button class="styleButton" id="DarkTheme" onclick="DarkTheme()">Grey Theme</button>
+        </div>
+        <a id="accountMenu" href="javascript:showAccountInfo()">Account</a>
+        <a id="Notes" href="javascript:openNotes()"> Notes </a>
+        <div id="allNotes">
+
+        </div>
+        <a id="createNote" href="javascript:createNote()"> New Note </a>
+      </div>
+      
+      <span onclick="openNav()"><button id="MenuButton"> | | | </button></span>
+      
+      <div id="secureMain">
+        <div id="homeDiv">
+          <h1>Welcome to the very secure page!</h1>
+          <p> 
+            You can go to your account info by pressing the menu button in the up left corner <br>
+            and going to the "Account" section. This will give you all your registered account info.
+          </p>
+        </div>
+        <div id="accountDiv">
+            <h1> Account Info </h1>
+        </div>
+        <div id="notesDiv">
+          <h1 id="noteName"> {Name} </h1>
+          <p id="noteContent"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div id="createNoteDiv">
+          <h1> New Note </h1>
+          <form id="createNodeForm">
+            <span>Name: </span>
+            <input type="text" id="cnoteName" placeholder="Name of note">
+            <br>
+            <br>
+            <span>Contents</span>
+            <br>
+            <textarea id="cnoteContent" placeholder="Enter text here..."></textarea>
+            <br>
+            <button type="submit" id="createNoteButton"> Create </button>
+          </form>
+        </div>
+      </div>
+    <script src="jwt.js"></script>
+</body>
+</html>
